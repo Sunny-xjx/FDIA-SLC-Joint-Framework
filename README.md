@@ -1,6 +1,7 @@
 # FDIA-SLC Joint Framework
 
 This repository is associated with the manuscript:
+
 **A Joint Framework for Measurement Error Detection, Missing Data Imputation, and FDIA/SLC Classification in Power Systems**
 
 ## Current status
