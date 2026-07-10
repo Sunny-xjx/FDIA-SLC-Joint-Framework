@@ -19,6 +19,10 @@ This repository will be updated to include:
 4. machine-learning classification scripts;
 5. generated FDIA/SLC datasets.
 
+## Data source
+
+The raw load data used in this study are derived from the public 2012 Global Energy Forecasting Competition (GEFC) dataset.
+
 ## Citation
 
 After publication, the DOI and citation information of the paper will be added here.
