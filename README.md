@@ -81,10 +81,7 @@ FDIA-SLC-Joint-Framework/
 
 ### MATLAB
 
-The MATLAB modules require:
-
- MATLAB R2022b or later
- MATPOWER 7.0 or later
+The MATLAB modules require: MATPOWER 
 
 ### Python
 
