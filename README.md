@@ -83,8 +83,8 @@ FDIA-SLC-Joint-Framework/
 
 The MATLAB modules require:
 
-- MATLAB R2022b or later
-- MATPOWER 7.0 or later
+ MATLAB R2022b or later
+ MATPOWER 7.0 or later
 
 ### Python
 
@@ -105,7 +105,7 @@ openpyxl
 joblib
 tqdm
 
-## Data source
+## Python
 
 The raw load data used in this study are derived from the public 2012 Global Energy Forecasting Competition (GEFC) dataset.
 
