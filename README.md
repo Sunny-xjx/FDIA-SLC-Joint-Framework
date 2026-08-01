@@ -106,6 +106,14 @@ joblib
 tqdm
 ```
 
+## Usage
+
+After installing the required dependencies, run the project through:
+
+```text
+single_node/SE_identification/SE_identification_1.ipynb
+```
+
 ## Data source
 
 The raw load data used in this study are derived from the public 2012 Global Energy Forecasting Competition (GEFC) dataset.
