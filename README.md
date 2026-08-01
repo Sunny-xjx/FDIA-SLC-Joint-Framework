@@ -104,8 +104,9 @@ notebook
 openpyxl
 joblib
 tqdm
+```
 
-## Python
+## Data source
 
 The raw load data used in this study are derived from the public 2012 Global Energy Forecasting Competition (GEFC) dataset.
 
