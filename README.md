@@ -14,8 +14,8 @@ FDIA-SLC-Joint-Framework/
 │   ├── ekf_imputation.m                 # EKF-based missing/error data imputation
 │   ├── compute_sdm.m                    # SDM calculation
 │   │
-│   ├── full_flowchart_demo/
-│   │   ├── main_AC_EKF.m                # main MATLAB demo
+│   ├── full_flowchart/
+│   │   ├── main_AC_EKF.m               
 │   │   ├── wls.m                        # WLS state estimation
 │   │   ├── wls_z.m                      # AC measurement model
 │   │   ├── H_matrix.m                   # measurement Jacobian
@@ -25,9 +25,9 @@ FDIA-SLC-Joint-Framework/
 │   │
 │   └── generate_anomaly/
 │       ├── generate_FDI/
-│       │   └── generate_fdia.m          # FDIA data generation
+│       │   └── generate_fdia.m          # FDIA data generation script
 │       └── generate_SLC/
-│           └── generate_slc.m           # SLC data generation
+│           └── generate_slc.m           # SLC data generation script
 │
 ├── data_generation/
 │   └── generate_load/
@@ -37,14 +37,14 @@ FDIA-SLC-Joint-Framework/
 │       └── load_values_20040101.mat
 │
 ├── dataset/
-│   ├── single_attack_201-Dim_Features.csv
-│   ├── multi_attack_201-Dim_Features.csv
-│   ├── single_attack_FDI_SLC.csv
-│   ├── multi_attack_FDI_SLC.csv
-│   ├── Active_Power.xlsx
-│   ├── Reactive_Power.xlsx
-│   ├── Voltage_Mag.xlsx
-│   └── Voltage_Phase.xlsx
+│   ├── single_attack_201-Dim_Features.csv   # extracted 201-dimensional feature dataset for single-node anomalies
+│   ├── multi_attack_201-Dim_Features.csv    # extracted 201-dimensional feature dataset for multi-node anomalies
+│   ├── single_attack_FDI_SLC.csv            
+│   ├── multi_attack_FDI_SLC.csv             
+│   ├── Active_Power.xlsx                    # processed GEFC load profiles (active power)
+│   ├── Reactive_Power.xlsx                  # processed GEFC load profiles (reactive power)
+│   ├── Voltage_Mag.xlsx                    
+│   └── Voltage_Phase.xlsx                  
 │
 ├── GEFCOM2012_Data/
 │   ├── Load/                            # GEFCOM 2012 load data
@@ -57,36 +57,53 @@ FDIA-SLC-Joint-Framework/
 ├── single_node/
 │   └── SE_identification/
 │       ├── SE_identification_1.ipynb    # single-node classification notebook
-│       ├── classification_models/       # PCA-based trained models
-│       ├── classification_models_1/     # all-feature trained models
+│       ├── classification_models/      
+│       ├── classification_models_1/     
 │       ├── cross_validation/
 │       │   ├── single_node_cv.py        # repeated stratified 5-fold CV
 │       │   └── readme.txt
-│       ├── score_1/                     # saved evaluation scores
-│       └── time_1/                      # saved training times
+│       ├── score_1/                     
+│       └── time_1/                     
 │
 ├── multi_node/
 │   └── SE_identification/
 │       ├── SE_identification.ipynb      # multi-node classification notebook
-│       ├── classification_models/       # all-feature and PCA-based models
+│       ├── classification_models/       
 │       ├── cross_validation/
 │       │   ├── multi_node_cv.py         # repeated stratified 5-fold CV
 │       │   └── readme.txt
-│       ├── score/                       # saved evaluation scores
-│       └── time/                        # saved training times
+│       ├── score/                       
+│       └── time/                      
 │
 └── README.md                           # repository description
 ```
+## Requirements
 
-## Planned contents
+### MATLAB
 
-This repository will be updated to include:
+The MATLAB modules require:
 
-1. scripts for FDIA and SLC scenario generation;
-2. scripts for measurement error detection and missing data imputation;
-3. scripts for feature construction and PCA-based feature extraction;
-4. machine-learning classification scripts;
-5. generated FDIA/SLC datasets.
+- MATLAB R2022b or later
+- MATPOWER 7.0 or later
+
+### Python
+
+The Python modules were developed using Python 3.9 or later.
+
+Install the required packages using:
+```txt
+numpy
+pandas
+scipy
+scikit-learn
+scikit-optimize
+xgboost
+matplotlib
+jupyter
+notebook
+openpyxl
+joblib
+tqdm
 
 ## Data source
 
