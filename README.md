@@ -6,6 +6,7 @@ This repository is associated with the manuscript:
 
 ## Content
 
+```text
 FDIA-SLC-Joint-Framework/
 ├── anomaly_detection/
 │   ├── compute_residual.m               # compute EKF prediction residuals
@@ -75,6 +76,7 @@ FDIA-SLC-Joint-Framework/
 │       └── time/                        # saved training times
 │
 └── README.md                           # repository description
+```
 
 ## Planned contents
 
