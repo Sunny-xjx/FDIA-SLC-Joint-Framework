@@ -1,10 +1,3 @@
-% Shared version 2022 - August - 05
-% WLS and EKF state estimation, plus FDI and SLC
-% The power flow has been done using OPF via matpower (version 7.0)
-%%%%%%%%%%%%%%%%%% Important %%%%%%%%%%%%%%%%%%%
-% In order to be able to run this code you must have matpower installed
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 clc
 clearvars
 close all
