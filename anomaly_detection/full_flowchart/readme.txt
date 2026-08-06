@@ -1,7 +1,7 @@
-This folder provides a simplified MATLAB implementation of the power system
+This folder provides a simplified IEEE-14 MATLAB implementation of the power system
 state estimation framework used in this study.
 
-The demo illustrates the main simulation workflow, including:
+It illustrates the main simulation workflow, including:
 
 - IEEE 14-bus system modeling based on MATPOWER;
 - AC power flow calculation and measurement generation;
